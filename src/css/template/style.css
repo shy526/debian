@@ -5900,7 +5900,7 @@ input:focus {
 	border: none;
 }
 .coming-soon {
-	background: url(../images/bg/coming-soon.jpg) center center fixed no-repeat;
+	background: url(../../images/index-bg.jpg) center center fixed no-repeat;
 	background-size: cover;
 	padding: 150px 0;
 	text-align: center;
