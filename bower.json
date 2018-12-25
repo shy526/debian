@@ -1,0 +1,17 @@
+{
+  "name": "debian",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "sunjiaqing <sundada214@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
