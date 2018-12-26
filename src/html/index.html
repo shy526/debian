@@ -115,7 +115,7 @@
                                 " <div class=\"blog-tag-icon\">";
                             //1笔记 2 图片 3音屏 4 视频 5 连接
                             if(item.typed==1){
-                                html+="<i class=\"fa fa-pencil\">";
+                                html+="<i class=\"fa fa-pencil\"></i>";
                             }else if (item.typed==2){
                                 html+=" <i class=\"fa fa-picture-o\"></i>";
                             } else if (item.typed==3){
@@ -125,9 +125,9 @@
                             } else if (item.typed==5){
                                 html+=" <i class=\"fa fa-link\"></i>";
                             }
-                            html+="</i></div>\n" +
+                            html+="</div>\n" +
 
-                                "<a href=\""+item.showUrl+"\" class=\"tittle-post font-playfair\">"+item.name+"</a>\n" +
+                                "<a  target='_blank' href=\""+item.showUrl+"\" class=\"tittle-post font-playfair\">"+item.name+"</a>\n" +
                                 "<ul class=\"info\">\n" +
                                 " <li><i class=\"fa fa-user\"></i> "+item.userName+"</li>\n" +
                                 "<li><i class=\"fa fa-calendar-o\"></i>"+new Date(item.updateTime).Format("yyyy-MM-dd hh:mm")+"</li>\n" +
