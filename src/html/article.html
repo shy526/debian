@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>文章</title>
+
+
+    <!--MAIN STYLE-->
+    <link href="../css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+    <link href="../css/template/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="../js/template/rs-plugin/css/settings.css" media="screen"/>
+
+    <!-- JavaScripts -->
+    <script src="../js/template/modernizr.js"></script>
+
+
+</head>
+<body>
+<!-- LOADER ===========================================-->
+@@include('./loader.html',{
+
+})
+
+<!-- Page Wrap -->
+<div id="wrap">
+
+    <!-- Header -->
+    <!-- Header -->
+    @@include('./menu.html',{
+    "article": "active"
+    })
+    <!-- Header End -->
+
+    <!-- CONTENT START -->
+    <div class="content">
+
+        <!--======= SUB BANNER =========-->
+        <section class="sub-banner">
+            <div class="container">
+                <h4>文章</h4>
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb">
+                    <li><a href="/debian/index">主页</a></li>
+                    <li class="active">文章</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="section-p-30px blog-page">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Right Side Bar -->
+                    <div class="col-sm-3 animate fadeInLeft" data-wow-delay="0.4s">
+                        <div class="side-bar">
+
+                            <!--  SEARCH -->
+                            <div class="search">
+                                <form>
+                                    <input type="text" placeholder="检索" id="search-text">
+                                    <button type="button" ><i class="fa fa-search" id="search"></i></button>
+                                </form>
+                            </div>
+
+                            <!-- HEADING -->
+                            <div class="heading">
+                                <h4>作者<span id="user-depot"></span></h4>
+                            </div>
+                            <!-- CATEGORIES -->
+                            <ul class="cate" id="user-depot-list">
+
+                            </ul>
+
+                            <!-- HEADING -->
+                            <div class="heading">
+                                <h4>分类</h4>
+                            </div>
+
+                            <!-- CATEGORIES -->
+                            <ul class="cate" id="category-list">
+                            </ul>
+
+                            <!-- HEADING -->
+                            <div class="heading">
+                                <h4>最近更新</h4>
+                            </div>
+                            <!-- CATEGORIES -->
+                            <ul class="cate latest-post" id="latest-post">
+
+                            </ul>
+
+
+                            <!-- TAGS -->
+                            <h4 class="margin-t-40">标签(暂不支持)</h4>
+                            <ul class="tags">
+                                <li><a href="#.">hadoop</a></li>
+                                <li><a href="#.">c</a></li>
+                                <li><a href="#.">c++</a></li>
+                                <li><a href="#.">java</a></li>
+                                <li><a href="#.">mysql</a></li>
+                                <li><a href="#.">web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Blog Bar -->
+                    <div class="col-sm-9 animate fadeInRight" data-wow-delay="0.4s">
+                        <!--  Blog Posts -->
+                        <div class="blog-posts medium-images">
+                            <ul>
+                                <!--  Posts 1 -->
+                                <li class="animate fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row">
+                                        <!--  Image -->
+                                        <div class="col-sm-5"><img class="img-responsive"
+                                                                   src="../images/template/blog-med-1.jpg" alt=""></div>
+
+                                        <!--  Post Details -->
+                                        <div class="col-sm-7"><span class="tags">FASHION NEWS</span> <a href="#."
+                                                                                                        class="tittle-post font-playfair">Mighty
+                                            Healthy 2013 Spring/Summer</a>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                                molestias excepturi sint occaecati cupiditate non provident, similique
+                                                sunt in culpa. </p>
+                                            <!--  Post Info -->
+                                            <ul class="info">
+                                                <li><i class="fa fa-user"></i> admin</li>
+                                                <li><i class="fa fa-calendar-o"></i> 12 JULY</li>
+                                                <li><i class="fa fa-eye"></i> 325</li>
+                                            </ul>
+                                            <a class="btn btn-small btn-dark" href="#.">READ MORE</a>
+                                            <!-- Tag Icon -->
+                                            <div class="blog-tag-icon"><i class="fa fa-pencil"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--  Posts 2 -->
+                                <li class="animate fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row">
+                                        <!--  Image -->
+                                        <div class="col-sm-5">
+                                            <section class="vid"><img class="img-responsive"
+                                                                      src="../images/template/blog-med-2.jpg" alt="">
+                                                <div class="position-center-center"><a href="#." class="video-btn"></a>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                        <!--  Post Details -->
+                                        <div class="col-sm-7"><span class="tags">TRENDING NEWS</span> <a href="#."
+                                                                                                         class="tittle-post font-playfair">
+                                            Standard post with featured video</a>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                                molestias excepturi sint occaecati cupiditate non provident, similique
+                                                sunt in culpa. </p>
+                                            <!--  Post Info -->
+                                            <ul class="info">
+                                                <li><i class="fa fa-user"></i> admin</li>
+                                                <li><i class="fa fa-calendar-o"></i> 12 JULY</li>
+                                                <li><i class="fa fa-eye"></i> 325</li>
+                                            </ul>
+                                            <a class="btn btn-small btn-dark" href="#.">READ MORE</a>
+                                            <!-- Tag Icon -->
+                                            <div class="blog-tag-icon"><i class="fa fa-film"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--  Posts 3 -->
+                                <li class="animate fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row">
+                                        <!--  Image -->
+                                        <div class="col-sm-5">
+                                            <div class="product-slides">
+                                                <div><img class="img-responsive" src="../images/template/blog-med-3.jpg"
+                                                          alt=""></div>
+                                                <div><img class="img-responsive" src="../images/template/blog-med-2.jpg"
+                                                          alt=""></div>
+                                                <div><img class="img-responsive" src="../images/template/blog-med-1.jpg"
+                                                          alt=""></div>
+                                            </div>
+                                        </div>
+
+                                        <!--  Post Details -->
+                                        <div class="col-sm-7"><span class="tags">MOTION GRAPHIC</span> <a href="#."
+                                                                                                          class="tittle-post font-playfair">Standard
+                                            post with slide images</a>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                                molestias excepturi sint occaecati cupiditate non provident, similique
+                                                sunt in culpa. </p>
+                                            <!--  Post Info -->
+                                            <ul class="info">
+                                                <li><i class="fa fa-user"></i> admin</li>
+                                                <li><i class="fa fa-calendar-o"></i> 12 JULY</li>
+                                                <li><i class="fa fa-eye"></i> 325</li>
+                                            </ul>
+                                            <a class="btn btn-small btn-dark" href="#.">READ MORE</a>
+                                            <!-- Tag Icon -->
+                                            <div class="blog-tag-icon"><i class="fa fa-picture-o"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--  Posts 4 -->
+                                <li class="animate fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row">
+                                        <!--  Image -->
+                                        <div class="col-sm-5"><img class="img-responsive"
+                                                                   src="../images/template/blog-med-4.jpg" alt=""></div>
+
+                                        <!--  Post Details -->
+                                        <div class="col-sm-7"><span class="tags">MOTION GRAPHIC</span> <a href="#."
+                                                                                                          class="tittle-post font-playfair">Boohoo
+                                            Unitard</a>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                                molestias excepturi sint occaecati cupiditate non provident, similique
+                                                sunt in culpa. </p>
+                                            <!--  Post Info -->
+                                            <ul class="info">
+                                                <li><i class="fa fa-user"></i> admin</li>
+                                                <li><i class="fa fa-calendar-o"></i> 12 JULY</li>
+                                                <li><i class="fa fa-eye"></i> 325</li>
+                                            </ul>
+                                            <a class="btn btn-small btn-dark" href="#.">READ MORE</a>
+                                            <!-- Tag Icon -->
+                                            <div class="blog-tag-icon"><i class="fa fa-picture-o"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--  Posts 5 -->
+                                <li class="animate fadeInUp" data-wow-delay="0.4s">
+                                    <div class="row">
+                                        <!--  Image -->
+                                        <div class="col-sm-5"><img class="img-responsive"
+                                                                   src="../images/template/blog-med-5.jpg" alt=""></div>
+
+                                        <!--  Post Details -->
+                                        <div class="col-sm-7"><span class="tags">MOTION GRAPHIC</span> <a href="#."
+                                                                                                          class="tittle-post font-playfair">Plaid
+                                            for Brunch</a>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                                molestias excepturi sint occaecati cupiditate non provident, similique
+                                                sunt in culpa. </p>
+                                            <!--  Post Info -->
+                                            <ul class="info">
+                                                <li><i class="fa fa-user"></i> admin</li>
+                                                <li><i class="fa fa-calendar-o"></i> 12 JULY</li>
+                                                <li><i class="fa fa-eye"></i> 325</li>
+                                            </ul>
+                                            <a class="btn btn-small btn-dark" href="#.">READ MORE</a>
+                                            <!-- Tag Icon -->
+                                            <div class="blog-tag-icon"><i class="fa fa-picture-o"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- GO TO TOP -->
+    <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+    <!-- GO TO TOP End -->
+</div>
+<!-- Wrap End -->
+<script src="../js/template/jquery-1.11.3.js"></script>
+<script src="../js/template/wow.min.js"></script>
+<script src="../js/template/bootstrap.min.js"></script>
+<script src="../js/template/own-menu.js"></script>
+<script src="../js/template/owl.carousel.min.js"></script>
+<script src="../js/template/jquery.magnific-popup.min.js"></script>
+<script src="../js/template/jquery.isotope.min.js"></script>
+<script src="../js/template/jquery.flexslider-min.js"></script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="../js/template/main.js"></script>
+<script>
+    let author = {
+        pageNumber: 1,
+        pageSize: 5,
+        end: false,
+        ifEnd: function (array) {
+            this.pageNumber++;
+            if (array.length <= 0) {
+                this.pageNumber = 1;
+            }
+        }
+    }
+    let id;
+
+    function authorS(callback) {
+        $.ajax({
+            url: "/api/hook/list",
+            data: {
+                pageNumber: author.pageNumber,
+                pageSize: author.pageSize
+            },
+            beforeSend: function () {
+
+            },
+            success: function (result) {
+                console.log(result)
+                if (result) {
+                    if (result.code == 200) {
+                        author.ifEnd(result.data);
+                        if (result.data.length <= 0) {
+                            alert("没有更多的数据了")
+                            return;
+                        }
+                        $("#user-depot-list").empty();
+                        result.data.forEach((item) => {
+                            let html = "<li><a href=\"#.\">" + item.githubName + "/" + item.depot + "</a></li>"
+                            $("#user-depot-list").append(html);
+                        })
+                        $("#user-depot-list").append("<li><a href=\"javascript:authorS()\">换一批</a></li>");
+                        if (callback) {
+                            callback(result.data);
+                        }
+                    } else if (result.code == 500) {
+                        alert(result.message)
+                    } else if (result.code == 302) {
+                        document.location.href = result.data
+                    } else {
+                        console.log("没有对应code处理:" + result.code);
+                    }
+                } else {
+                    console.log("没有任何返回值");
+                }
+            }
+        })
+    }
+
+
+    function categoryS(hookId) {
+        $.ajax({
+            url: "/api/category/all/"+hookId,
+            beforeSend: function () {
+
+            },
+            success: function (result) {
+                console.log(result)
+                if (result) {
+                    if (result.code == 200) {
+                        $("#category-list").empty();
+                        result.data.forEach((item) => {
+                            let html = "<li><a href=\"#.\">" +item.defaultName+ "</a></li>"
+                            $("#category-list").append(html);
+                        })
+                    } else if (result.code == 500) {
+                        alert(result.message)
+                    } else if (result.code == 302) {
+                        document.location.href = result.data
+                    } else {
+                        console.log("没有对应code处理:" + result.code);
+                    }
+                } else {
+                    console.log("没有任何返回值");
+                }
+            }
+        })
+    }
+
+    function lastPost(){
+        $.ajax({
+            url:"/api/markdown/top/6",
+            beforeSend:function () {
+
+            },
+            success:function (result) {
+                if (result){
+                    if (result.code==200){
+                        $("#latest-post").empty()
+                        result.data.forEach((item)=>{
+                            let html="<li>\n" +
+                                "<div class=\"media\">\n" +
+                                "<div class=\"media-left\"><a href=\""+item.showUrl+"\"><img style='    width: 70px;\n" +
+                                "    height: 70px;' \n" +
+                                "                                                src=\"../images/blog-cover.gif\" alt=\"\"></a></div>\n" +
+                                "                                        <div class=\"media-body\"><a href=\""+item.showUrl+"\">"+item.name+"</a>\n" +
+                                "                                            <p>"+item.userName+"</p>\n" +
+                                "                                        </div>\n" +
+                                "                                    </div>\n" +
+                                "                                </li>";
+                            $("#latest-post").append(html);
+                        })
+                    } else if (result.code==500){
+                        alert(result.message)
+                    }else if (result.code==302) {
+                        document.location.href=result.data
+                    }else {
+                        console.log("没有对应code处理:"+result.code);
+                    }
+                }else {
+                    console.log("没有任何返回值");
+                }
+            }
+        })
+    }
+
+    $(function () {
+        authorS(function (data) {
+            let item = data[0];
+            if (item) {
+                id=item.id;
+                categoryS(item.id)
+            }
+        });
+        lastPost()
+        $("#search").click(function () {
+            let val = $("#search-text").val();
+            if (!val) {
+                alert('不能为空');
+                return;
+            }
+            $.ajax({
+                url: "/api/markdown/search/name/like",
+                data:{
+                    name:val
+                },
+                beforeSend: function () {
+
+                },
+                success: function (result) {
+                    console.log(result)
+                    if (result) {
+                        if (result.code == 200) {
+                            alert(result.data)
+                        } else if (result.code == 500) {
+                            alert(result.message)
+                        } else if (result.code == 302) {
+                            document.location.href = result.data
+                        } else {
+                            console.log("没有对应code处理:" + result.code);
+                        }
+                    } else {
+                        console.log("没有任何返回值");
+                    }
+                }
+            })
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -38,60 +38,16 @@
 </head>
 <body>
 <!-- LOADER ===========================================-->
-<div id="loader">
-    <div class="loader">
-        <div class="position-center-center"><img src="../images/template/logo-dark.png" alt="">
+@@include('./loader.html',{
 
-            <p class="font-playfair text-center">Please Wait...</p>
-            <div class="loading">
-                <div class="ball"></div>
-                <div class="ball"></div>
-                <div class="ball"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
+})
 <!-- Page Wrap -->
 <div id="wrap">
 
     <!-- Header -->
-    <header class="header-style-2">
+    @@include('./menu.html',{
 
-
-        <!-- Logo -->
-        <div class="container">
-            <div class="logo"><a href="#."><img src="../images/template/logo-dark.png" alt=""></a></div>
-        </div>
-
-        <!-- Nav -->
-        <div class="sticky">
-            <div class="container">
-                <!-- Nav -->
-                <nav class="webimenu">
-                    <!-- MENU BUTTON RESPONSIVE -->
-                    <div class="menu-toggle"><i class="fa fa-bars"> </i></div>
-                    <ul class="ownmenu">
-                        <li class="active"><a href="index.html">主页</a>
-                        </li>
-                        <li class="sub-menu"><a href="index.html">文章</a>
-                        </li>
-                        <li class="sub-menu"><a href="index.html">服务</a>
-                            <ul class="dropdown">
-                                <li class="sub-menu"><a href="05-about-us-01.html">api提供</a>
-                                    <ul class="dropdown">
-                                        <li><a href="05-about-us-01.html">天气API</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="05-about-us-01.html">github仓库接入</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    })
     <!-- Header End -->
 
     <!-- CONTENT START -->

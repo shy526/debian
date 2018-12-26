@@ -8,7 +8,6 @@ let insertJs=(function () {
         insertJs:function (jsPath,callback) {
             var temp = document.createElement('script');
             temp.setAttribute('type', 'text/javascript');
-
             temp.src = jsPath
             temp.onload = function() {
                 if (obj.debug){

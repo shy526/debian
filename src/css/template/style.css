@@ -991,7 +991,7 @@ header .ownmenu .look-book .media-body a {
 	color: #fff;
 	height: 70px;
 	width: 70px;
-	background: url(../images/play-icon.png) no-repeat;
+	background: url(../../images/template/play-icon.png) no-repeat;
 	display: inline-block;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -2286,6 +2286,7 @@ header .ownmenu .look-book .media-body a {
 .blog-posts .info {
 	margin-top: 20px;
 }
+
 .blog-posts .info li {
 	display: inline-block;
 	color: #272727;
@@ -2328,7 +2329,7 @@ header .ownmenu .look-book .media-body a {
 .blog-mansory .blog-posts .tags {
 	margin-top: 15px;
 }
-.blog-mansory .blog-posts /*.item-mas*/ {
+.blog-mansory .blog-posts .item-mas {
 	margin-bottom: 30px;
 }
 .side-bar .latest-post li {
@@ -2405,7 +2406,7 @@ header .ownmenu .look-book .media-body a {
 	color: #fff;
 	height: 70px;
 	width: 70px;
-	background: url(../images/play-icon.png) no-repeat;
+	background: url(../../images/template/play-icon.png) no-repeat;
 	float: left;
 }
 .blog-posts .owl-nav {
@@ -4132,7 +4133,7 @@ footer .flicker img {
 	color: #fff;
 	height: 70px;
 	width: 70px;
-	background: url(../images/play-icon.png) no-repeat;
+	background: url(../../images/template/play-icon.png) no-repeat;
 	float: left;
 	margin-top: 35px;
 }
@@ -5761,7 +5762,7 @@ input:focus {
 	color: #fff;
 	height: 70px;
 	width: 70px;
-	background: url(../images/play-icon.png) no-repeat;
+	background: url(../../images/template/play-icon.png) no-repeat;
 	float: left;
 }
 .about-us .media-heading {

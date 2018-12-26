@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEBIAN - Multi Purpose eCommerce HTML5 Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
 
-<!--MAIN STYLE-->
-  <link href="../css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="../css/template/main.css" rel="stylesheet" type="text/css">
-  <link href="../css/template/style.css" rel="stylesheet" type="text/css">
-  <link href="../css/template/responsive.css" rel="stylesheet" type="text/css">
-  <link href="../css/template/animate.css" rel="stylesheet" type="text/css">
-  <link href="../css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
-<!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
-<link href="../css/template/custom.css" rel="stylesheet" type="text/css">
+    <!--MAIN STYLE-->
+    <link href="../css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/animate.css" rel="stylesheet" type="text/css">
+    <link href="../css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+    <link href="../css/template/custom.css" rel="stylesheet" type="text/css">
 
-  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-  <link rel="stylesheet" type="text/css" href="../js/template/rs-plugin/css/settings.css" media="screen"/>
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="../js/template/rs-plugin/css/settings.css" media="screen"/>
 
-  <!-- JavaScripts -->
-  <script src="../js/template/modernizr.js"></script>
+    <!-- JavaScripts -->
+    <script src="../js/template/modernizr.js"></script>
+
 </head>
 <body>
 <!-- LOADER ===========================================-->
-<div id="loader">
-  <div class="loader">
-    <div class="position-center-center"> <img src="../images/template/logo-dark.png" alt="">
-      
-      <p class="font-playfair text-center">Please Wait...</p>
-      <div class="loading">
-      	<div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-      </div>
-    </div>
-  </div>
-</div>
+    @@include('./loader.html',{
 
+    })
 <!-- Page Wrap -->
 <div id="wrap">
-  
-  <!-- Coming Soon -->
-  <div class="coming-soon" style="height: 2063px;
-    ">
-    <div class="container">
-      <div class="avatar animate fadeInUp" data-wow-delay="0.4s">
-        <img src="../images/template/soon-avatar.png" alt="" > </div>
-      <h1 class="animate fadeInUp" data-wow-delay="0.4s" style="color: #000">ccxh</h1>
-      <p class="animate fadeInUp" data-wow-delay="0.4s" style="color: #000">
-      不为失败找借口,只为成功找方法
-      </p>
 
+    <!-- Header -->
+    @@include('./menu.html',{
+        "index": "active"
+    })
+    <!-- Header End -->
+
+    <!-- CONTENT START -->
+    <div class="content">
+
+        <!--======= SUB BANNER =========-->
+        <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
+            <div class="container">
+                <h4>TOP 20</h4>
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb">
+                    <li class="active"><a href="/debian/index.html">主页</a></li>
+
+                </ol>
+            </div>
+        </section>
+
+        <!--  FAQS -->
+        <section class="section-p-30px">
+            <div class="container">
+
+                <!--======= Blog Mansory =========-->
+                <div class="blog-mansory">
+
+                    <!--======= Blog =========-->
+                    <section class="blog">
+                        <div class="container">
+
+                            <!--  Blog Posts -->
+                            <div class="blog-posts">
+                                <ul class="row" id="container">
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
+
+    <!-- GO TO TOP -->
+    <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+    <!-- GO TO TOP End -->
 </div>
-</body>
-</html>
-<!-- Wrap End --> 
+<!-- Wrap End -->
 <script src="../js/template/jquery-1.11.3.js"></script>
 <script src="../js/template/wow.min.js"></script>
 <script src="../js/template/bootstrap.min.js"></script>
@@ -64,13 +86,80 @@
 <script src="../js/template/owl.carousel.min.js"></script>
 <script src="../js/template/jquery.magnific-popup.min.js"></script>
 <script src="../js/template/jquery.isotope.min.js"></script>
-<script src="../js/template/jquery.flexslider-min.js"></script> <script src="../js/template/jquery.downCount.js"></script>
+<script src="../js/template/jquery.flexslider-min.js"></script>
+<script src="../js/common/dateFormat.js"></script>
 
-<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 <script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="../js/template/main.js"></script>
+
 <script type="text/javascript">
+    /*-----------------------------------------------------------------------------------*/
+    /*  MASONRY LAYOUT
+    /*-----------------------------------------------------------------------------------*/
+
+    $(function () {
+        $.ajax({
+            url:"/api/markdown/top/20",
+            beforeSend:function () {
+
+            },
+            success:function (result) {
+                console.log(result)
+                if (result){
+                    if (result.code==200){
+                        result.data.forEach((item)=>{
+                            let html="<li class=\"col-sm-3 item-mas animate fadeIn\" data-wow-delay=\"0.2s\">\n" +
+                                " <img class=\"img-responsive\" src=\"../images/blog-cover.gif\" alt=\"\">\n" +
+                                " <div class=\"blog-tag-icon\">";
+                            //1笔记 2 图片 3音屏 4 视频 5 连接
+                            if(item.typed==1){
+                                html+="<i class=\"fa fa-pencil\">";
+                            }else if (item.typed==2){
+                                html+=" <i class=\"fa fa-picture-o\"></i>";
+                            } else if (item.typed==3){
+                                html+=" <i class=\"fa fa-headphones\"></i>";
+                            } else if (item.typed==4){
+                                html+=" <i class=\"fa fa-film\"></i>";
+                            } else if (item.typed==5){
+                                html+=" <i class=\"fa fa-link\"></i>";
+                            }
+                            html+="</i></div>\n" +
+
+                                "<a href=\""+item.showUrl+"\" class=\"tittle-post font-playfair\">"+item.name+"</a>\n" +
+                                "<ul class=\"info\">\n" +
+                                " <li><i class=\"fa fa-user\"></i> "+item.userName+"</li>\n" +
+                                "<li><i class=\"fa fa-calendar-o\"></i>"+new Date(item.updateTime).Format("yyyy-MM-dd hh:mm")+"</li>\n" +
+                                /*"<li><i class=\"fa fa-eye\"></i> 325</li>\n" +*/
+                                "<li style='cursor: pointer;' onclick='javascript:window.open(\""+item.githubUrl+"\");'><i class=\"fa fa-link\"></i>原文</li>\n" +
+                                " </ul>\n" +
+                                " </li>";
+                            $("#container").append(html);
+
+                        })
+
+                        var $container = $('#container');
+                        $container.imagesLoaded(function () {
+                            $container.isotope({
+                                itemSelector: '.item-mas',
+                                layoutMode: 'masonry'
+                            });
+                        });
+                    } else if (result.code==500){
+                        alert(result.message)
+                    }else if (result.code==302) {
+                        document.location.href=result.data
+                    }else {
+                        console.log("没有对应code处理:"+result.code);
+                    }
+                }else {
+                    console.log("没有任何返回值");
+                }
+            }
+        })
+    })
+
 
 </script>
 </body>
