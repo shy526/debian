@@ -131,7 +131,7 @@ function lastPost() {
                             "<div class=\"media\">\n" +
                             "<div class=\"media-left\"><a target='_blank' href=\"" + item.showUrl + "\"><img style='    width: 70px;\n" +
                             "    height: 70px;' \n" +
-                            "                                                src=\"../images/blog-cover.gif\" alt=\"\"></a></div>\n" +
+                            "                                                src=\"https://i.loli.net/2018/12/28/5c26454d91220.gif\" alt=\"\"></a></div>\n" +
                             "                                        <div class=\"media-body\"><a href=\"" + item.showUrl + "\">" + item.name + "</a>\n" +
                             "                                            <p>" + item.userName + "</p>\n" +
                             "                                        </div>\n" +
@@ -168,10 +168,10 @@ function renderMarkdownList(array,b) {
         let number = Math.floor(Math.random()*(1-0+1)+0);
         if (number==0){
             html+=   "<img class=\"img-responsive\"\n" +
-                "                                                                   src=\"../images/blog-cover.gif\" alt=\"\"></div>\n";
+                "                                                                   src=\"https://i.loli.net/2018/12/28/5c26454d91220.gif\" alt=\"\"></div>\n";
         } else {
             html+=   "<img class=\"img-responsive\"\n" +
-                "                                                                   src=\"../images/blog-cover1.gif\" alt=\"\"></div>\n";
+                "                                                                   src=\"https://i.loli.net/2018/12/28/5c26454da7109.gif\" alt=\"\"></div>\n";
         }
 
         html+="                                        <div class=\"col-sm-7\">\n" +

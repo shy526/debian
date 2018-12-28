@@ -14,9 +14,9 @@ let index=(()=>{
 
                         let number = Math.floor(Math.random()*(1-0+1)+0);
                         if (number==0){
-                            html+=" <img class=\"img-responsive\" src=\"../images/blog-cover.gif\" alt=\"\">\n";
+                            html+=" <img class=\"img-responsive\" src=\"https://i.loli.net/2018/12/28/5c26454d91220.gif\" alt=\"\">\n";
                         } else {
-                            html+=" <img class=\"img-responsive\" src=\"../images/blog-cover1.gif\" alt=\"\">\n";
+                            html+=" <img class=\"img-responsive\" src=\"https://i.loli.net/2018/12/28/5c26454da7109.gif\" alt=\"\">\n";
                         }
                         html+=  " <div class=\"blog-tag-icon\">";
                         //1笔记 2 图片 3音屏 4 视频 5 连接
