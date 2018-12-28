@@ -7,7 +7,8 @@ let gulp = require('gulp');
     rename=require('gulp-rename'),   //文件重命名
     babel=require('gulp-babel'),   //es6转es5
     del=require('del'),   //es6转es5
-    notify=require('gulp-notify');   //提示
+    notify=require('gulp-notify'),
+        zip = require('gulp-zip');;   //提示
 gulp.task('default', function() {
     // 将你的默认的任务代码放在这
 });
@@ -92,4 +93,10 @@ gulp.task('deleteDist', function (cb) {
 gulp.task('build', gulp.series(['mov','js','css','font','img','t1','fileInclude'],()=>{
 
 }));
+
+gulp.task("zip",()=>{
+    gulp.src('./dist/**')
+        .pipe(zip('all.zip'))                   // 压缩成all.zip文件
+        .pipe(gulp.dest('./dist'))
+})
 
