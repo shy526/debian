@@ -84,17 +84,23 @@ gulp.task('t1',  function() {
     return gulp.src('./src/js/template/**/*')
         .pipe(gulp.dest('./dist/js/template'))
 });
+gulp.task('t2',  function() {
+    return gulp.src('./src/favicon.ico')
+        .pipe(gulp.dest('./dist/'))
+});
+
 
 gulp.task('deleteDist', function (cb) {
      del([
         'dist/**/*',
     ], cb);
 });
-gulp.task('build', gulp.series(['mov','js','css','font','img','t1','fileInclude'],()=>{
+gulp.task('build', gulp.series(['mov','js','css','font','img','t1','t2','fileInclude'],()=>{
 
 }));
 
 gulp.task("zip",()=>{
+
     gulp.src('./dist/**')
         .pipe(zip('all.zip'))                   // 压缩成all.zip文件
         .pipe(gulp.dest('./dist'))
