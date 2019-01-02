@@ -19,17 +19,18 @@
                     <li @@if (context.article==='active' ) { class="active sub-menu" }><a href="/debian/article.html">文章</a>
                     </li>
                     <li @@if (context.service==='active' ) { class="active sub-menu" }>
-                        <a href="index.html">服务</a>
+                        <a href="javascript:void(0)">服务</a>
                         <ul class="dropdown">
                             <li class="sub-menu"><a href="05-about-us-01.html">api提供</a>
                                 <ul class="dropdown">
                                     <li><a href="05-about-us-01.html">天气API</a></li>
                                 </ul>
                             </li>
-                            <li><a href="05-about-us-01.html">github仓库接入</a>
+                            <li><a href="/debian/service-github.html">github仓库接入</a>
                             </li>
                         </ul>
                     </li>
+                    <li @@if (context.faqs==='active' ) { class="active sub-menu" }><a href="/debian/faqs.html">帮助</a>
                 </ul>
             </nav>
         </div>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>帮助</title>
+
+    <!--MAIN STYLE-->
+    <link href="/css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/responsive.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/animate.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+    <link href="/css/template/custom.css" rel="stylesheet" type="text/css">
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="/js/template/rs-plugin/css/settings.css" media="screen"/>
+
+    <!-- JavaScripts -->
+    <script src="/js/template/modernizr.js"></script>
+
+</head>
+<body>
+<!-- LOADER ===========================================-->
+@@include('./loader.html',{
+
+})
+<!-- Page Wrap -->
+<div id="wrap">
+
+    <!-- Header -->
+    @@include('./menu.html',{
+    "faqs": "active"
+    })
+
+    <!-- Header End -->
+
+    <!-- CONTENT START -->
+    <div class="content">
+
+        <!--======= SUB BANNER =========-->
+        <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
+            <div class="container">
+                <h4>帮助</h4>
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb">
+                    <li><a href="/">主页</a></li>
+                    <li class="active">帮助</li>
+                </ol>
+            </div>
+        </section>
+
+        <!--  FAQS -->
+        <section class="section-p-30px">
+            <div class="container">
+                <div class="row animate fadeInUp" data-wow-delay="0.4s">
+                    <div class="col-md-3">
+                        <div class="side-bar">
+                            <!-- FAQS NAV -->
+                            <ul class="cate faq-cate">
+                                <li><a href="javascript:void(0)">github接入</a></li>
+                                <li><a href="javascript:void(0)">api服务</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="faqs">
+
+                            <!-- FAQS NAV -->
+                            <div class="panel-group" id="accordion">
+
+                                <!-- FAQS 1 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                                                   href="#collapseOne">什么是github接入服务</a></h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">将你的github仓库中的markdown变为本站的文章<br>
+                                            让你更轻松的阅读和展示
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQS 2 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                                                   href="#collapseTwo" class="collapsed">如何规划你的github仓库</a></h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">本站会将仓库下第一层目录解析为分类,第一层目录下为markdown文章
+                                            <br/>
+                                            <a target="_blank" href="https://github.com/sunjiaqing/blog-note" style="  cursor:pointer;">具体可以参考此仓库的形式</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQS 3 -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
+                                                                   href="#collapseThree" class="collapsed">如何接入github仓库</a></h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <a target="_blank" href="https://github.com/sunjiaqing/blog-note" style="  cursor:pointer;">请参考此文</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- GO TO TOP -->
+    <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+    <!-- GO TO TOP End -->
+</div>
+<!-- Wrap End -->
+<script src="https://lib.baomitu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/template/wow.min.js"></script>
+<script src="/js/template/bootstrap.min.js"></script>
+<script src="/js/template/own-menu.js"></script>
+<script src="/js/template/owl.carousel.min.js"></script>
+<script src="/js/template/jquery.magnific-popup.min.js"></script>
+<script src="/js/template/jquery.isotope.min.js"></script>
+<script src="/js/template/jquery.flexslider-min.js"></script>
+<script src="/js/common/dateFormat.js"></script>
+
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/js/template/main.js"></script>
+<script src="/js/page/article.js"></script>
+</body>
+</html>
