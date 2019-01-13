@@ -18,6 +18,9 @@
 
     <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
     <link rel="stylesheet" type="text/css" href="/js/template/rs-plugin/css/settings.css" media="screen"/>
+    @@include('./commonCss.html',{
+
+    })
 
     <!-- JavaScripts -->
     <script src="/js/template/modernizr.js"></script>
@@ -121,7 +124,7 @@
                             </ul>
                         </div>
                         <ul class="pagination animate fadeInUp" data-wow-delay="0.4s" >
-                            <li onclick="now.next()"><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+                            <li onclick="author.markdownList()"><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -149,5 +152,8 @@
 <script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="../js/template/main.js"></script>
 <script src="../js/page/article.js"></script>
+@@include('./commonJs.html',{
+
+})
 </body>
 </html>

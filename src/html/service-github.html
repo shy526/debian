@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>github 接入服务</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>github 接入服务</title>
 
-  <!--MAIN STYLE-->
-  <link href="/css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="/css/template/main.css" rel="stylesheet" type="text/css">
-  <link href="/css/template/style.css" rel="stylesheet" type="text/css">
-  <link href="/css/template/responsive.css" rel="stylesheet" type="text/css">
-  <link href="/css/template/animate.css" rel="stylesheet" type="text/css">
-  <link href="/css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
-  <link href="/css/template/custom.css" rel="stylesheet" type="text/css">
+    <!--MAIN STYLE-->
+    <link href="/css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/responsive.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/animate.css" rel="stylesheet" type="text/css">
+    <link href="/css/template/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+    <link href="/css/template/custom.css" rel="stylesheet" type="text/css">
+    @@include('./commonCss.html',{
 
-  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-  <link rel="stylesheet" type="text/css" href="/js/template/rs-plugin/css/settings.css" media="screen"/>
+    })
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="/js/template/rs-plugin/css/settings.css" media="screen"/>
 
-  <!-- JavaScripts -->
-  <script src="/js/template/modernizr.js"></script>
+    <!-- JavaScripts -->
+    <script src="/js/template/modernizr.js"></script>
 </head>
 <body>
 <!-- LOADER ===========================================-->
@@ -29,48 +31,49 @@
 
 <!-- Page Wrap -->
 <div id="wrap">
-  
-  <!-- Header -->
-  @@include('./menu.html',{
-  "service": "active"
-  })
-  <!-- Header End --> 
-  
-  <!-- CONTENT START -->
-  <div class="content"> 
-    
-    <!--======= SUB BANNER =========-->
-    <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
-      <div class="container">
-        <h4>github接入服务</h4>
-        <!-- Breadcrumb -->
-        <ol class="breadcrumb">
-          <li><a href="/">主页</a></li>
-          <li><a href="javascript:void(0)">服务</a></li>
-          <li class="active">github接入服务</li>
-        </ol>
-      </div>
-    </section>
-    
-    <!--======= Portfolio Single =========-->
-    <section class="section-p-60px portfolio-single portfolio-left">
-      <div class="container">
-        <div class="row">
 
-          <!-- Details -->
-          <div class="col-md-2  col-md-offset-5 animate fadeInRight" data-wow-delay="0.4s">
-            <a href="/" class="btn btn-dark btn-small">生成访问码<i class="fa fa-code" id="code"></i></a>
-            <a href="/" class="btn btn-dark btn-small">帮助<i class="fa fa-code" id="faq"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  
+    <!-- Header -->
+    @@include('./menu.html',{
+    "service": "active"
+    })
+    <!-- Header End -->
 
-  <!-- GO TO TOP --> 
-  	<a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a> 
-  <!-- GO TO TOP End -->
+    <!-- CONTENT START -->
+    <div class="content">
+
+        <!--======= SUB BANNER =========-->
+        <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
+            <div class="container">
+                <h4>github接入服务</h4>
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb">
+                    <li><a href="/">主页</a></li>
+                    <li><a href="javascript:void(0)">服务</a></li>
+                    <li class="active">github接入服务</li>
+                </ol>
+            </div>
+        </section>
+
+        <!--======= Portfolio Single =========-->
+        <section class="section-p-60px portfolio-single portfolio-left">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Details -->
+                    <div class="col-md-2  col-md-offset-5 animate fadeInRight" data-wow-delay="0.4s">
+                        <a href="javascript:void(0)" class="btn btn-dark btn-small access">生成访问码<i class="fa fa-code"
+                                                                                                   id="code"></i></a>
+                        <a href="/" class="btn btn-dark btn-small">帮助<i class="fa fa-code" id="faq"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- GO TO TOP -->
+    <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a>
+    <!-- GO TO TOP End -->
 </div>
 <!-- Wrap End -->
 <script src="https://lib.baomitu.com/jquery/1.11.3/jquery.min.js"></script>
@@ -82,12 +85,16 @@
 <script src="/js/template/jquery.isotope.min.js"></script>
 <script src="/js/template/jquery.flexslider-min.js"></script>
 <script src="/js/common/dateFormat.js"></script>
+<script src="../js/page/service_github.js"></script>
+@@include('./commonJs.html',{
 
-
+})
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 <script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="../js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="/js/template/main.js"></script>
-<script src="/js/page/article.js"></script>
+<script>
+
+</script>
 </body>
 </html>

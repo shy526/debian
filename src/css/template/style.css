@@ -6021,3 +6021,7 @@ input:focus {
 	opacity: 1;
 	color: #fff;
 }
+.notie-container {
+	z-index: 100000000000000000 !important;
+	box-shadow: none;
+}

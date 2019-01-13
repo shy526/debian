@@ -53,6 +53,14 @@ gulp.task('fileInclude', function() {
 gulp.task('mov',  function() {
     return gulp.src('./node_modules/github-markdown-css/github-markdown.css')
         .pipe(gulp.dest('./src/css'))
+    &&
+    gulp.src("./node_modules/notie/dist/notie.min.css").pipe(gulp.dest('./src/js/plugin/notie'))
+    &&
+    gulp.src("./node_modules/notie/dist/notie.min.js").pipe(gulp.dest('./src/js/plugin/notie'))
+    &&
+    gulp.src("./node_modules/notie/dist/notie.min.css").pipe(gulp.dest('./dist/js/plugin/notie'))
+    &&
+    gulp.src("./node_modules/notie/dist/notie.min.js").pipe(gulp.dest('./dist/js/plugin/notie'))
 });
 
 
@@ -65,11 +73,11 @@ gulp.task('css',function(){
 });
 //JS处理
 gulp.task('js',function(){
-    return gulp.src(['./src/js/**/*.js','!./src/js/template/**/*.js'])
+    return gulp.src(['./src/js/**/*.js','!./src/js/template/**/*.js',"!./src/js/plugin/notie/*"])
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(uglify())                    //压缩
+       // .pipe(uglify())                    //压缩
         .pipe(gulp.dest('dist/js'))            //输出
 });
 gulp.task('font',  function() {
