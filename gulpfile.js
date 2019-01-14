@@ -77,7 +77,7 @@ gulp.task('js',function(){
         .pipe(babel({
             presets: ['@babel/env']
         }))
-       // .pipe(uglify())                    //压缩
+        .pipe(uglify())                    //压缩
         .pipe(gulp.dest('dist/js'))            //输出
 });
 gulp.task('font',  function() {
