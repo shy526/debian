@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>标题</title>
     <!--MAIN STYLE-->
+    <script src="https://lib.baomitu.com/jquery/1.11.3/jquery.min.js"></script>
     <link href="/css/template/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/template/main.css" rel="stylesheet" type="text/css">
     <link href="/css/template/style.css" rel="stylesheet" type="text/css">
@@ -35,6 +36,7 @@
             }
         }
     </style>
+
 </head>
 <body>
 <!-- LOADER ===========================================-->
@@ -44,10 +46,13 @@
 <!-- Page Wrap -->
 <div id="wrap">
 
-    <!-- Header -->
-    @@include('./menu.html',{
-
-    })
+    <div id="auto-menu"></div>
+    <script>
+        $('#auto-menu').load('/debian/menu.html', function() {
+            console.log("menu load")
+        });
+    </script>
+    <script src="/js/template/modernizr.js"></script>
     <!-- Header End -->
 
     <!-- CONTENT START -->
@@ -95,7 +100,7 @@
     <!-- GO TO TOP End -->
 </div>
 <!-- Wrap End -->
-<script src="https://lib.baomitu.com/jquery/1.11.3/jquery.min.js"></script>
+
 <script src="/js/template/wow.min.js"></script>
 <script src="/js/template/bootstrap.min.js"></script>
 <script src="/js/template/own-menu.js"></script>
@@ -108,5 +113,7 @@
 <script type="text/javascript" src="/js/template/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="/js/template/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="/js/template/main.js"></script>
+
+
 </body>
 </html>
